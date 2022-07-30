@@ -10,3 +10,13 @@ minikube dashboard
 
 - Google Cloud account creation
 - HTTPS Setup with Kubernetes
+
+# Local environment cleanup
+
+kubectl delete -f k8s/
+minikube stop
+minikube start
+minikube delete # fully delete the cluster
+docker ps
+docker stop <container_id>
+docker system prune #clearing the build cache
